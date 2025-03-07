@@ -1,0 +1,74 @@
+{
+    "act-one": [
+		{
+			"scene-one": {
+				"imageCount": 3,
+				"images": [
+					{
+						"img-1": {
+									"filepath": "",
+									"accompanyingText": "",
+									"displayDuration": 3
+						},
+						"img-2": {
+									"filepath": "",
+									"accompanyingText": "",
+									"displayDuration": 3
+						}
+					}					
+				],
+				"actions": [
+					{
+						"RIGHT": [
+							"",
+							"",
+							""
+						]
+					},
+					{
+						"LEFT": [
+							"",
+							"",
+							""
+						]
+					}
+				]
+			}
+		},
+		{
+			"scene-one": {
+				"imageCount": 3,
+				"images": [
+					{
+						"img-1": {
+									"filepath": "",
+									"accompanyingText": "",
+									"displayDuration": 3
+						},
+						"img-2": {
+									"filepath": "",
+									"accompanyingText": "",
+									"displayDuration": 3
+						}
+					}					
+				],
+				"actions": [
+					{
+						"RIGHT": [
+							"",
+							"",
+							""
+						]
+					},
+					{
+						"LEFT": [
+							"",
+							"",
+							""
+						]
+					}
+				]
+			}
+		}
+	]
+}
