@@ -1,0 +1,149 @@
+{
+    "intro-scene": {
+        "startingText": "Hit ENTER to know Holly the Horseshoe Crab's story",
+        "imageCount": 1,
+        "images": [
+            {
+                "type": "",
+				"filepath": "",
+                "accompanyingText": "",
+                "displayDuration": -1
+            }
+        ],
+        "actions": [
+            {
+                "RIGHT": [
+                    "images/1_opening_scene/buttons/right/2.png"
+                ]
+            }
+        ]
+    },
+    "act-one-scene-one": {
+        "startingText": "CHAPTER ONE: Holly sets off on a springtime spawning spree!",
+        "imageCount": 12,
+        "images": [
+            {
+                "type": "",
+				"filepath": "images/2_act_one_scene_one/A1S1_1.png",
+                "accompanyingText": "",
+                "displayDuration": 2.0
+            },
+			{
+                "type": "",
+				"filepath": "images/2_act_one_scene_one/A1S1_2.png",
+                "accompanyingText": "Every year, in the late spring (May-June), horseshoe crabs gather in the salt marshes and sandy beaches of the Atlantic coast to spawn (lay eggs) during full moon and new moon nights.",
+                "displayDuration": 5.0
+            },
+			{
+                "type": "",
+				"filepath": "images/2_act_one_scene_one/A1S1_3.png",
+                "accompanyingText": "Every year, in the late spring (May-June), horseshoe crabs gather in the salt marshes and sandy beaches of the Atlantic coast to spawn (lay eggs) during full moon and new moon nights.",
+                "displayDuration": 3.0
+            },
+			{
+                "type": "",
+				"filepath": "images/2_act_one_scene_one/A1S1_4.png",
+                "accompanyingText": "",
+                "displayDuration": 1.0
+            },
+			{
+                "type": "",
+				"filepath": "images/2_act_one_scene_one/A1S1_5.png",
+                "accompanyingText": "",
+                "displayDuration": 1.0
+            },
+			{
+                "type": "",
+				"filepath": "images/2_act_one_scene_one/A1S1_6.png",
+                "accompanyingText": "A horseshoe crab will then burrow in the sand and lay a cluster of about 4,000 tiny eggs at a time!",
+                "displayDuration": 4.0
+            },
+			{
+                "type": "",
+				"filepath": "images/2_act_one_scene_one/A1S1_7.png",
+                "accompanyingText": "A horseshoe crab will then burrow in the sand and lay a cluster of about 4,000 tiny eggs at a time!",
+                "displayDuration": 2.0
+            },
+			{
+                "type": "",
+				"filepath": "images/2_act_one_scene_one/A1S1_8.png",
+                "accompanyingText": "",
+                "displayDuration": 1.0
+            },
+			{
+                "type": "",
+				"filepath": "images/2_act_one_scene_one/A1S1_9.png",
+                "accompanyingText": "",
+                "displayDuration": 1.0
+            },
+			{
+                "type": "",
+				"filepath": "images/2_act_one_scene_one/A1S1_10.png",
+                "accompanyingText": "",
+                "displayDuration": 2.0
+            },
+			{
+                "type": "",
+				"filepath": "images/2_act_one_scene_one/A1S1_11.png",
+                "accompanyingText": "",
+                "displayDuration": 2.0
+            },
+			{
+                "type": "",
+				"filepath": "images/2_act_one_scene_one/A1S1_12.png",
+                "accompanyingText": "END OF SCENE",
+                "displayDuration": 2.0
+            },
+        ],
+        "actions": [
+            {
+                "RIGHT": [
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "LEFT": [
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        ]
+    },
+    "act-one-scene-two": {
+        "startingText": "",
+        "imageCount": 3,
+        "images": [
+            {
+                "type": "",
+				"filepath": "images/2_act_one_scene_one/A1S1_1.png",
+                "accompanyingText": "",
+                "displayDuration": 3
+            },
+            {
+                "type": "",
+				"filepath": "images/2_act_one_scene_one/A1S1_1.png",
+                "accompanyingText": "",
+                "displayDuration": 3
+            }
+        ],
+        "actions": [
+            {
+                "RIGHT": [
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "LEFT": [
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        ]
+    }
+}
