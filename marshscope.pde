@@ -639,6 +639,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-two-scene-one-chunk-nine-point-two-page-two";
+      } else if (keyCode == LEFT) {
+         nextScreen = "act-two-scene-one-chunk-nine-post-transition";
       }
     }
     break;
@@ -652,6 +654,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-two-last-screen";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-two-scene-one-chunk-nine-post-transition";
       }
     }
     break;
@@ -666,6 +670,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-two-scene-one-chunk-nine-point-one-page-two";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-two-scene-one-chunk-nine-post-transition";
       }
     }
     break;
@@ -677,6 +683,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-two-scene-one-chunk-nine-point-one-post-transition";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-two-scene-one-chunk-nine-post-transition";
       }
     }
     break;
@@ -703,6 +711,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-two-last-screen";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-two-scene-one-chunk-nine-point-one-post-transition";
       }
     }
     break;
@@ -714,6 +724,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-two-last-screen";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-two-scene-one-chunk-nine-point-one-post-transition";
       }
     }
     break;
@@ -725,6 +737,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-three-scene-one-chunk-ten-page-zero";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-two-scene-one-chunk-nine-point-one-post-transition";
       }
     }
     break;
@@ -798,6 +812,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-three-scene-one-chunk-ten-point-one-page-one-point-two";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-three-scene-one-chunk-ten-post-transition";
       }
     }
     break;
@@ -809,6 +825,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-three-scene-one-chunk-ten-point-one-page-one-point-three";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-three-scene-one-chunk-ten-post-transition";
       }
     }
     break;
@@ -820,6 +838,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-three-scene-one-chunk-ten-point-one-page-one-point-four";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-three-scene-one-chunk-ten-post-transition";
       }
     }
     break;
@@ -831,6 +851,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-three-scene-one-chunk-ten-point-one-page-two";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-three-scene-one-chunk-ten-post-transition";
       }
     }
     break;
@@ -842,6 +864,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-three-scene-one-chunk-ten-point-one-page-three";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-three-scene-one-chunk-ten-post-transition";
       }
     }
     break;
@@ -853,6 +877,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-three-scene-one-chunk-ten-point-one-page-four";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-three-scene-one-chunk-ten-post-transition";
       }
     }
     break;
@@ -864,6 +890,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-three-scene-one-chunk-ten-point-post-transition";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-three-scene-one-chunk-ten-post-transition";
       }
     }
     break;
@@ -876,6 +904,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-three-scene-one-chunk-ten-point-two-page-two";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-three-scene-one-chunk-ten-post-transition";
       }
     }
     break;
@@ -887,6 +917,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-three-scene-one-chunk-ten-point-two-page-three";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-three-scene-one-chunk-ten-post-transition";
       }
     }
     break;
@@ -898,6 +930,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-three-scene-one-chunk-ten-point-two-page-four";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-three-scene-one-chunk-ten-post-transition";
       }
     }
     break;
@@ -910,6 +944,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-three-scene-one-chunk-ten-point-two-page-five";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-three-scene-one-chunk-ten-post-transition";
       }
     }
     break;
@@ -921,6 +957,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-three-scene-one-chunk-ten-point-post-transition";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-three-scene-one-chunk-ten-post-transition";
       }
     }
     break;
@@ -946,6 +984,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-three-scene-one-chunk-ten-point-three-page-one";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-three-scene-one-chunk-ten-point-post-transition";
       }
     }
     break;
@@ -956,7 +996,9 @@ void draw() {
     image(screenImage, width/2, height/2);
     if (keyPressed) {
       if (keyCode == RIGHT) {
-         nextScreen = "act-three-last-page";
+         nextScreen = "end-screen";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-three-scene-one-chunk-ten-point-post-transition";
       }
     }
     break;
@@ -968,6 +1010,8 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-three-scene-one-chunk-ten-point-four-page-one";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-three-scene-one-chunk-ten-point-post-transition";
       }
     }
     break;
@@ -978,7 +1022,22 @@ void draw() {
     image(screenImage, width/2, height/2);
     if (keyPressed) {
       if (keyCode == RIGHT) {
-         nextScreen = "act-three-last-page";
+         nextScreen = "end-screen";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-three-scene-one-chunk-ten-point-post-transition";
+      }
+    }
+    break;
+    
+    case "end-screen":
+    background(#FFFFFF);
+    screenImage = getImage("End screen", -1);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "end-screen";
+      }else if (keyCode == LEFT) {
+         nextScreen = "act-three-scene-one-chunk-ten-point-post-transition";
       }
     }
     break;
