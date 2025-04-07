@@ -59,6 +59,21 @@ void setup() {
   
   // Chunk 8
   screenGifSet[10] = new Gif(this, getImagePath("A1 S4 - Chunk 8 p2", "gif", 8));  
+  
+  // Chunk 9
+  screenGifSet[11] = new Gif(this, getImagePath("A2 S1 - Chunk 9 p2", "gif", 9));
+  screenGifSet[12] = new Gif(this, getImagePath("A2 S1 - Chunk 9 p5", "gif", 9));
+  
+  screenGifSet[13] = new Gif(this, getImagePath("A2 S1 - Chunk 9.1 p1", "gif", 9));
+  screenGifSet[14] = new Gif(this, getImagePath("A2 S1 - Chunk 9.1 post-transition screen", "gif", 9));
+  
+  
+  screenGifSet[15] = new Gif(this, getImagePath("A2 S1 - Chunk 9.2 p1", "gif", 9));
+  screenGifSet[16] = new Gif(this, getImagePath("A2 S1 - Chunk 9.2 p2", "gif", 9));
+  
+  
+  
+  
 }
 
 void draw() {
@@ -526,6 +541,180 @@ void draw() {
     }
     break;
     
+    //------ACT TWO CODE------
+   case "act-two-scene-one-chunk-nine-page-zero":
+    background(#FFFFFF);
+    screenImage = getImage("A2 S1 - Chunk 9 p0", 9);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-two-scene-one-chunk-nine-page-one";
+      }
+    }
+    break;
+    
+    case "act-two-scene-one-chunk-nine-page-one":
+    background(#FFFFFF);
+    screenImage = getImage("A2 S1 - Chunk 9 p1", 9);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-two-scene-one-chunk-nine-page-two";
+      }
+    }
+    break;
+    
+    case "act-two-scene-one-chunk-nine-page-two":
+    background(#FFFFFF);
+    screenGif = screenGifSet[11]; 
+    screenGif.play();
+    image(screenGif, width/2, height/2);
+    screenGif.noLoop(); // if GIF needs to be disabled for looping
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-two-scene-one-chunk-nine-page-three";
+      }
+    }
+    break;
+    
+    case "act-two-scene-one-chunk-nine-page-three":
+    background(#FFFFFF);
+    screenImage = getImage("A2 S1 - Chunk 9 p3", 9);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-two-scene-one-chunk-nine-page-four";
+      }
+    }
+    break;
+    
+    case "act-two-scene-one-chunk-nine-page-four":
+    background(#FFFFFF);
+    screenImage = getImage("A2 S1 - Chunk 9 p4", 9);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-two-scene-one-chunk-nine-page-five";
+      }
+    }
+    break;
+    
+    case "act-two-scene-one-chunk-nine-page-five":
+    background(#FFFFFF);
+    screenGif = screenGifSet[12]; 
+    screenGif.play();
+    image(screenGif, width/2, height/2);
+    screenGif.noLoop(); // if GIF needs to be disabled for looping
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-two-scene-one-chunk-nine-post-transition";
+      }
+    }
+    break;
+    
+    
+    //SITE OF CHOICE
+    case "act-two-scene-one-chunk-nine-post-transition":
+    background(#FFFFFF);
+    screenImage = getImage("A1 S2 - Chunk 9 post-transition screen", 9);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (key == 'L' || key == 'l') {
+         nextScreen = "act-one-scene-one-chunk-nine-point-one-page-one";
+      } else if (key == 'A' || key == 'a') {
+         nextScreen = "act-one-scene-one-chunk-nine-point-two-page-one"; // TODO: coin flip
+      }
+    }
+    break;
+    
+    case "act-two-scene-one-chunk-nine-point-two-page-one":
+    background(#FFFFFF);
+    screenGif = screenGifSet[15]; 
+    screenGif.play();
+    image(screenGif, width/2, height/2);
+    screenGif.noLoop(); // if GIF needs to be disabled for looping
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-one-scene-one-chunk-nine-point-two-page-two";
+      }
+    }
+    break;
+    
+    case "act-two-scene-one-chunk-nine-point-two-page-two":
+    background(#FFFFFF);
+    screenGif = screenGifSet[16]; 
+    screenGif.play();
+    image(screenGif, width/2, height/2);
+    screenGif.noLoop(); // if GIF needs to be disabled for looping
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-two-last-screen";
+      }
+    }
+    break;
+    
+    
+    case "act-two-scene-one-chunk-nine-point-one-page-one":
+    background(#FFFFFF);
+    screenGif = screenGifSet[13]; 
+    screenGif.play();
+    image(screenGif, width/2, height/2);
+    screenGif.noLoop(); // if GIF needs to be disabled for looping
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-one-scene-one-chunk-nine-point-one-page-two";
+      }
+    }
+    break;
+    
+    case "act-two-scene-one-chunk-nine-point-one-page-two":
+    background(#FFFFFF);
+    screenImage = getImage("A2 S1 - Chunk 9.1 p2", 9);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-two-scene-one-chunk-nine-point-one-post-transition";
+      }
+    }
+    break;
+    
+    case "act-two-scene-one-chunk-nine-point-one-post-transition":
+    background(#FFFFFF);
+    screenGif = screenGifSet[14]; 
+    screenGif.play();
+    image(screenGif, width/2, height/2);
+    screenGif.noLoop(); // if GIF needs to be disabled for looping
+    if (keyPressed) {
+      if (key == 'L' || key == 'l') {
+         nextScreen = "act-one-scene-one-chunk-nine-point-one-point-one-page-one";
+      } else if (key == 'A' || key == 'a') {
+         nextScreen = "act-one-scene-one-chunk-nine-point-one-point-two-page-one"; // TODO: coin flip
+      }
+    }
+    break;
+    
+    case "act-two-scene-one-chunk-nine-point-one-point-one-page-one":
+    background(#FFFFFF);
+    screenImage = getImage("A2 S1 - Chunk 9.1.1 p1", 9);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-two-scene-one-chunk-nine-point-one-post-transition";
+      }
+    }
+    break;
+    
+    case "act-two-scene-one-chunk-nine-point-one-point-two-page-one":
+    background(#FFFFFF);
+    screenImage = getImage("A2 S1 - Chunk 9.1.2 p1", 9);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-two-last-screen";
+      }
+    }
+    break;
+   
   }
   
   if (changeScreen) {
@@ -559,6 +748,9 @@ String getImagePath(String name, String fileType, int chunkNumber) {
     case -2:
       imagePath += "act-one/";
       break;
+    case -3:
+      imagePath += "act-two/";
+      break;
     case 1:
       imagePath += "act-one/scene-one/chunk-one/";
       break;
@@ -582,6 +774,9 @@ String getImagePath(String name, String fileType, int chunkNumber) {
       break;
     case 8:
       imagePath += "act-one/scene-four/chunk-eight/";
+      break;
+    case 9:
+      imagePath += "act-two/scene-one/chunk-nine/";
       break;
   }
   
