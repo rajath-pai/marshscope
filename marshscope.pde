@@ -71,6 +71,9 @@ void setup() {
   screenGifSet[15] = new Gif(this, getImagePath("A2 S1 - Chunk 9.2 p1", "gif", 9));
   screenGifSet[16] = new Gif(this, getImagePath("A2 S1 - Chunk 9.2 p2", "gif", 9));
   
+  //Chunk 10
+  screenGifSet[17] = new Gif(this, getImagePath("A3 S1 - Chunk 10 p1", "gif", 10));
+  
   
   
   
@@ -721,7 +724,261 @@ void draw() {
     image(screenImage, width/2, height/2);
     if (keyPressed) {
       if (keyCode == RIGHT) {
-         nextScreen = "act-three";
+         nextScreen = "act-three-scene-one-chunk-ten-page-zero";
+      }
+    }
+    break;
+    
+    
+    //ACT-Three
+    case "act-three-scene-one-chunk-ten-page-zero":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10 p0", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three-scene-one-chunk-ten-page-one";
+      }
+    }
+    break;
+    
+    case "act-three-scene-one-chunk-ten-page-one":
+    background(#FFFFFF);
+    screenGif = screenGifSet[17]; 
+    screenGif.play();
+    image(screenGif, width/2, height/2);
+    screenGif.noLoop(); // if GIF needs to be disabled for looping
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three-scene-one-chunk-ten-page-two";
+      }
+    }
+    break;
+    
+    case "act-three-scene-one-chunk-ten-page-two":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10 p2", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three-scene-one-chunk-ten-page-three";
+      }
+    }
+    break;
+    
+    case "act-three-scene-one-chunk-ten-page-three":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10 p3", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three-scene-one-chunk-ten-post-transition";
+      }
+    }
+    break;
+    
+    //Site of Choice
+    case "act-three-scene-one-chunk-ten-post-transition":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10 post-transition screen", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (key == 'L' || key == 'l') {
+         nextScreen = "act-three-scene-one-chunk-ten-point-one-page-one-point-one";
+      } else if (key == 'A' || key == 'a') {
+         nextScreen = "act-three-scene-one-chunk-ten-point-two-page-one"; // TODO: coin flip
+      }
+    }
+    break;
+    
+    case "act-three-scene-one-chunk-ten-point-one-page-one-point-one":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10.1 p1.1", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three-scene-one-chunk-ten-point-one-page-one-point-two";
+      }
+    }
+    break;
+    
+    case "act-three-scene-one-chunk-ten-point-one-page-one-point-two":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10.1 p1.2", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three-scene-one-chunk-ten-point-one-page-one-point-three";
+      }
+    }
+    break;
+    
+    case "act-three-scene-one-chunk-ten-point-one-page-one-point-three":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10.1 p1.3", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three-scene-one-chunk-ten-point-one-page-one-point-four";
+      }
+    }
+    break;
+    
+    case "act-three-scene-one-chunk-ten-point-one-page-one-point-four":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10.1 p1.4", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three-scene-one-chunk-ten-point-one-page-two";
+      }
+    }
+    break;
+    
+    case "act-three-scene-one-chunk-ten-point-one-page-two":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10.1 p2", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three-scene-one-chunk-ten-point-one-page-three";
+      }
+    }
+    break;
+    
+    case "act-three-scene-one-chunk-ten-point-one-page-three":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10.1 p3", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three-scene-one-chunk-ten-point-one-page-four";
+      }
+    }
+    break;
+    
+    case "act-three-scene-one-chunk-ten-point-one-page-four":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10.1 p4", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three-scene-one-chunk-ten-point-post-transition";
+      }
+    }
+    break;
+    
+    //Variation 2 : 10.2
+    case "act-three-scene-one-chunk-ten-point-two-page-one":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10.2 p1", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three-scene-one-chunk-ten-point-two-page-two";
+      }
+    }
+    break;
+    
+    case "act-three-scene-one-chunk-ten-point-two-page-two":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10.2 p2", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three-scene-one-chunk-ten-point-two-page-three";
+      }
+    }
+    break;
+    
+    case "act-three-scene-one-chunk-ten-point-two-page-three":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10.2 p3", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three-scene-one-chunk-ten-point-two-page-four";
+      }
+    }
+    break;
+    
+    
+    case "act-three-scene-one-chunk-ten-point-two-page-four":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10.2 p4", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three-scene-one-chunk-ten-point-two-page-five";
+      }
+    }
+    break;
+    
+    case "act-three-scene-one-chunk-ten-point-two-page-five":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10.2 p5", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three-scene-one-chunk-ten-point-post-transition";
+      }
+    }
+    break;
+    
+    //Site of Choice - 2
+    case "act-three-scene-one-chunk-ten-point-post-transition":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10.1 and 10.2 post-transition screen", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (key == 'L' || key == 'l') {
+         nextScreen = "act-three-scene-one-chunk-ten-point-three-page-zero";
+      } else if (key == 'A' || key == 'a') {
+         nextScreen = "act-three-scene-one-chunk-ten-point-four-page-zero"; // TODO: coin flip
+      }
+    }
+    break;
+    
+    case "act-three-scene-one-chunk-ten-point-three-page-zero":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10.3 p0", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three-scene-one-chunk-ten-point-three-page-one";
+      }
+    }
+    break;
+    
+    case "act-three-scene-one-chunk-ten-point-three-page-one":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10.4 p1", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three-last-page";
+      }
+    }
+    break;
+    
+    case "act-three-scene-one-chunk-ten-point-four-page-zero":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10.4 p0", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three-scene-one-chunk-ten-point-four-page-one";
+      }
+    }
+    break;
+    
+    case "act-three-scene-one-chunk-ten-point-four-page-one":
+    background(#FFFFFF);
+    screenImage = getImage("A3 S1 - Chunk 10.4 p1", 10);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three-last-page";
       }
     }
     break;
@@ -762,6 +1019,9 @@ String getImagePath(String name, String fileType, int chunkNumber) {
     case -3:
       imagePath += "act-two/";
       break;
+    case -4:
+      imagePath += "act-three/";
+      break;
     case 1:
       imagePath += "act-one/scene-one/chunk-one/";
       break;
@@ -789,6 +1049,8 @@ String getImagePath(String name, String fileType, int chunkNumber) {
     case 9:
       imagePath += "act-two/scene-one/chunk-nine/";
       break;
+    case 10:
+      imagePath += "act-three/scene-one/chunk-ten/";
   }
   
    if (fileType == "image") {
