@@ -1,0 +1,51 @@
+import processing.serial.*;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
+Serial myPort;
+Robot robot;
+
+int[] keyCodes = {
+  KeyEvent.VK_R,
+  KeyEvent.VK_S,
+  KeyEvent.VK_T,
+  KeyEvent.VK_L,
+  KeyEvent.VK_N
+};
+
+void setup() {
+  size(400, 200);
+  printArray(Serial.list());
+  String portName = Serial.list()[2]; // change index if needed
+  myPort = new Serial(this, portName, 9600);
+
+  try {
+    robot = new Robot();
+  } catch (Exception e) {
+    e.printStackTrace();
+  }
+
+  println("Ready! Press external buttons on CPX...");
+}
+
+void draw() {
+  background(0);
+  fill(255);
+  text("Press external buttons (A1–A5) on your CPX", 30, 100);
+}
+
+void serialEvent(Serial myPort) {
+  String inString = myPort.readStringUntil('\n');
+  if (inString != null) {
+    inString = trim(inString);
+    int index = int(inString);
+
+    if (index >= 0 && index < keyCodes.length) {
+      println("Button " + index + " pressed -> Sending key " + keyCodes[index]);
+      robot.keyPress(keyCodes[index]);
+      robot.keyRelease(keyCodes[index]);
+    }
+  }
+}
+
+
