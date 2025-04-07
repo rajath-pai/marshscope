@@ -699,7 +699,7 @@ void draw() {
     image(screenImage, width/2, height/2);
     if (keyPressed) {
       if (keyCode == RIGHT) {
-         nextScreen = "act-two-scene-one-chunk-nine-point-one-post-transition";
+         nextScreen = "act-two-last-screen";
       }
     }
     break;
