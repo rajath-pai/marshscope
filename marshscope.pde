@@ -536,7 +536,7 @@ void draw() {
     image(screenImage, width/2, height/2);
     if (keyPressed) {
       if (keyCode == RIGHT) {
-         nextScreen = "act-two";
+         nextScreen = "act-two-scene-one-chunk-nine-page-zero";
       }
     }
     break;
@@ -616,13 +616,13 @@ void draw() {
     //SITE OF CHOICE
     case "act-two-scene-one-chunk-nine-post-transition":
     background(#FFFFFF);
-    screenImage = getImage("A1 S2 - Chunk 9 post-transition screen", 9);
+    screenImage = getImage("A2 S1 - Chunk 9 post-transition screen", 9);
     image(screenImage, width/2, height/2);
     if (keyPressed) {
       if (key == 'L' || key == 'l') {
-         nextScreen = "act-one-scene-one-chunk-nine-point-one-page-one";
+         nextScreen = "act-two-scene-one-chunk-nine-point-one-page-one";
       } else if (key == 'A' || key == 'a') {
-         nextScreen = "act-one-scene-one-chunk-nine-point-two-page-one"; // TODO: coin flip
+         nextScreen = "act-two-scene-one-chunk-nine-point-two-page-one"; // TODO: coin flip
       }
     }
     break;
@@ -635,7 +635,7 @@ void draw() {
     screenGif.noLoop(); // if GIF needs to be disabled for looping
     if (keyPressed) {
       if (keyCode == RIGHT) {
-         nextScreen = "act-one-scene-one-chunk-nine-point-two-page-two";
+         nextScreen = "act-two-scene-one-chunk-nine-point-two-page-two";
       }
     }
     break;
@@ -662,7 +662,7 @@ void draw() {
     screenGif.noLoop(); // if GIF needs to be disabled for looping
     if (keyPressed) {
       if (keyCode == RIGHT) {
-         nextScreen = "act-one-scene-one-chunk-nine-point-one-page-two";
+         nextScreen = "act-two-scene-one-chunk-nine-point-one-page-two";
       }
     }
     break;
@@ -686,9 +686,9 @@ void draw() {
     screenGif.noLoop(); // if GIF needs to be disabled for looping
     if (keyPressed) {
       if (key == 'L' || key == 'l') {
-         nextScreen = "act-one-scene-one-chunk-nine-point-one-point-one-page-one";
+         nextScreen = "act-two-scene-one-chunk-nine-point-one-point-one-page-one";
       } else if (key == 'A' || key == 'a') {
-         nextScreen = "act-one-scene-one-chunk-nine-point-one-point-two-page-one"; // TODO: coin flip
+         nextScreen = "act-two-scene-one-chunk-nine-point-one-point-two-page-one"; // TODO: coin flip
       }
     }
     break;
@@ -711,6 +711,17 @@ void draw() {
     if (keyPressed) {
       if (keyCode == RIGHT) {
          nextScreen = "act-two-last-screen";
+      }
+    }
+    break;
+    
+    case "act-two-last-screen":
+    background(#FFFFFF);
+    screenImage = getImage("A2 to A3 transition screen", -3);
+    image(screenImage, width/2, height/2);
+    if (keyPressed) {
+      if (keyCode == RIGHT) {
+         nextScreen = "act-three";
       }
     }
     break;
