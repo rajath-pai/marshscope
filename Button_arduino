@@ -1,0 +1,33 @@
+const int buttonPins[] = { A1, A2, A3, A4, A5 };
+const int numButtons = 5;
+bool lastStates[5];
+
+void setup() {
+  Serial.begin(9600);
+  for (int i = 0; i < numButtons; i++) {
+    pinMode(buttonPins[i], INPUT_PULLUP);  // use internal pull-up resistor
+    lastStates[i] = HIGH; // not pressed (pull-up = HIGH)
+  }
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop() {
+  for (int i = 0; i < numButtons; i++) {
+    bool currentState = digitalRead(buttonPins[i]);
+
+    // Detect new press (falling edge: HIGH -> LOW)
+    if (currentState == LOW && lastStates[i] == HIGH) {
+      Serial.println(i); // send button index
+      digitalWrite(LED_BUILTIN, HIGH); // LED on while pressed
+    }
+
+    // Turn off LED when released
+    if (currentState == HIGH && lastStates[i] == LOW) {
+      digitalWrite(LED_BUILTIN, LOW);
+    }
+
+    lastStates[i] = currentState; // update state
+  }
+
+  delay(10); // debounce
+}
