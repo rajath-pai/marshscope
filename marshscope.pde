@@ -29,8 +29,8 @@ void setup() {
   songLoading = new Minim(this);
   ambient = songLoading.loadFile("audios/marsh_sounds.mp3"); // load background music
   
-  screen = "entry-screen"; //set up intro screen to start
-  // screen = "act-one-scene-four-chunk-five-end"; //set up intro screen to start
+  // screen = "entry-screen"; //set up intro screen to start
+  screen = "act-one-scene-four-chunk-five-end"; //set up intro screen to start
   
   changeScreen = false;
   
@@ -430,7 +430,8 @@ void draw() {
     image(screenImage, width/2, height/2);
     if (keyPressed) {
       if (keyCode == RIGHT) {
-         nextScreen = "act-one-scene-four-chunk-five-page-zero";
+         //nextScreen = "act-one-scene-four-chunk-five-page-zero";
+         nextScreen = "act-one-scene-four-chunk-five-page-one";
          nextScreenIsSet = true;
       } else if (keyCode == LEFT) {
          nextScreen = "act-one-scene-three-chunk-four-page-four";
@@ -465,7 +466,8 @@ void draw() {
          nextScreen = "act-one-scene-four-chunk-five-page-two";
          nextScreenIsSet = true;
       } else if (keyCode == LEFT) {
-         nextScreen = "act-one-scene-four-chunk-five-page-zero";
+         nextScreen = "act-one-scene-three-chunk-four-end";
+         // nextScreen = "act-one-scene-four-chunk-five-page-zero";
          nextScreenIsSet = true;
       }
     }
@@ -493,10 +495,10 @@ void draw() {
     image(screenImage, width/2, height/2);
     if (keyPressed) {
       if (key == 'G' || key == 'g') {
-         nextScreen = "act-one-scene-four-chunk-six-page-one";
+         nextScreen = "act-one-scene-four-chunk-eight-page-one";
          nextScreenIsSet = true;
       } else if (key == 'S' || key == 's') {
-         nextScreen = "act-one-scene-four-chunk-eight-page-one";
+         nextScreen = "act-one-scene-four-chunk-six-page-one";
          nextScreenIsSet = true;
       } else if (keyCode == LEFT) {
          nextScreen = "act-one-scene-four-chunk-five-page-two";
