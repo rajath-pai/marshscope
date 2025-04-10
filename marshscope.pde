@@ -29,8 +29,8 @@ void setup() {
   songLoading = new Minim(this);
   ambient = songLoading.loadFile("audios/marsh_sounds.mp3"); // load background music
   
-  // screen = "entry-screen"; //set up intro screen to start
-  screen = "act-one-scene-four-chunk-five-end"; //set up intro screen to start
+  screen = "entry-screen"; //set up intro screen to start
+  // screen = "act-two-scene-one-chunk-nine-point-one-post-transition"; //set up intro screen to start
   
   changeScreen = false;
   
@@ -76,14 +76,14 @@ void setup() {
   screenGifSet[15] = new Gif(this, getImagePath("A2 S1 - Chunk 9.1 post-transition screen", "gif", 9));
   
   // Chunk 9.2
-  screenGifSet[15] = new Gif(this, getImagePath("A2 S1 - Chunk 9.2 p1", "gif", 9));
-  screenGifSet[16] = new Gif(this, getImagePath("A2 S1 - Chunk 9.2 p2", "gif", 9));
+  screenGifSet[16] = new Gif(this, getImagePath("A2 S1 - Chunk 9.2 p1", "gif", 9));
+  screenGifSet[17] = new Gif(this, getImagePath("A2 S1 - Chunk 9.2 p2", "gif", 9));
   
   // Chunk 10
-  screenGifSet[17] = new Gif(this, getImagePath("A3 S1 - Chunk 10 p1", "gif", 10));
+  screenGifSet[18] = new Gif(this, getImagePath("A3 S1 - Chunk 10 p1", "gif", 10));
   
   // Chunk 10.1
-  screenGifSet[18] = new Gif(this, getImagePath("A3 S1 - Chunk 10.1 p1", "gif", 10));
+  screenGifSet[19] = new Gif(this, getImagePath("A3 S1 - Chunk 10.1 p1", "gif", 10));
   
 }
 
@@ -758,7 +758,7 @@ void draw() {
          nextScreen = "act-two-scene-one-chunk-nine-page-two";
          nextScreenIsSet = true;
       } else if (keyCode == LEFT) {
-         nextScreen = "act-one-scene-four-chunk-nine-page-zero";
+         nextScreen = "act-two-scene-one-chunk-nine-page-zero";
          nextScreenIsSet = true;
       }
     }
@@ -775,7 +775,7 @@ void draw() {
          nextScreen = "act-two-scene-one-chunk-nine-page-three";
          nextScreenIsSet = true;
       } else if (keyCode == LEFT) {
-         nextScreen = "act-one-scene-four-chunk-nine-page-one";
+         nextScreen = "act-two-scene-one-chunk-nine-page-one";
          nextScreenIsSet = true;
       }
     }
@@ -790,7 +790,7 @@ void draw() {
          nextScreen = "act-two-scene-one-chunk-nine-page-four";
          nextScreenIsSet = true;
       } else if (keyCode == LEFT) {
-         nextScreen = "act-one-scene-four-chunk-nine-page-two";
+         nextScreen = "act-two-scene-one-chunk-nine-page-two";
          nextScreenIsSet = true;
       }
     }
@@ -805,7 +805,7 @@ void draw() {
          nextScreen = "act-two-scene-one-chunk-nine-page-five";
          nextScreenIsSet = true;
       } else if (keyCode == LEFT) {
-         nextScreen = "act-one-scene-four-chunk-nine-page-three";
+         nextScreen = "act-two-scene-one-chunk-nine-page-three";
          nextScreenIsSet = true;
       }
     }
@@ -822,7 +822,7 @@ void draw() {
          nextScreen = "act-two-scene-one-chunk-nine-post-transition";
          nextScreenIsSet = true;
       } else if (keyCode == LEFT) {
-         nextScreen = "act-one-scene-four-chunk-nine-page-four";
+         nextScreen = "act-two-scene-one-chunk-nine-page-four";
          nextScreenIsSet = true;
       }
     }
@@ -841,7 +841,7 @@ void draw() {
          nextScreen = "act-two-scene-one-chunk-nine-point-two-page-one";
          nextScreenIsSet = true;
       } else if (keyCode == LEFT) {
-         nextScreen = "act-one-scene-four-chunk-nine-page-five";
+         nextScreen = "act-two-scene-one-chunk-nine-page-five";
          nextScreenIsSet = true;
       }
     }
@@ -850,7 +850,7 @@ void draw() {
   // CHUNK 9.2
   case "act-two-scene-one-chunk-nine-point-two-page-one":
     background(#FFFFFF);
-    screenGif = screenGifSet[15]; // A2 S1 - Chunk 9.2 p1
+    screenGif = screenGifSet[16]; // A2 S1 - Chunk 9.2 p1
     screenGif.play();
     image(screenGif, width/2, height/2);
     screenGif.noLoop(); // if GIF needs to be disabled for looping
@@ -864,7 +864,7 @@ void draw() {
     
   case "act-two-scene-one-chunk-nine-point-two-page-two":
     background(#FFFFFF);
-    screenGif = screenGifSet[16]; // A2 S1 - Chunk 9.2 p2
+    screenGif = screenGifSet[17]; // A2 S1 - Chunk 9.2 p2
     screenGif.play();
     image(screenGif, width/2, height/2);
     screenGif.noLoop(); // if GIF needs to be disabled for looping
@@ -992,7 +992,7 @@ void draw() {
     
   case "act-three-scene-one-chunk-ten-page-one":
     background(#FFFFFF);
-    screenGif = screenGifSet[17]; // A3 S1 - Chunk 10 p1
+    screenGif = screenGifSet[18]; // A3 S1 - Chunk 10 p1
     screenGif.play();
     image(screenGif, width/2, height/2);
     screenGif.noLoop(); // if GIF needs to be disabled for looping
@@ -1059,7 +1059,7 @@ void draw() {
   // CHUNK 10.1
   case "act-three-scene-one-chunk-ten-point-one-page-one":
     background(#FFFFFF);
-    screenGif = screenGifSet[18]; // A3 S1 - Chunk 10.1 p1
+    screenGif = screenGifSet[19]; // A3 S1 - Chunk 10.1 p1
     screenGif.play();
     image(screenGif, width/2, height/2);
     screenGif.noLoop(); // if GIF needs to be disabled for looping
