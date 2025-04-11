@@ -19,18 +19,19 @@ AudioPlayer ambient; // marsh song
 Minim songLoading;
 
 void setup() {
-  size(1512, 982); //set canvas size
+  // size(1512, 982); //set canvas size
   
-  // fullScreen();
+  fullScreen();
 
   imageMode(CENTER); //the image coordiantes are based on the center not the corner
   
   //load sounds
   songLoading = new Minim(this);
-  ambient = songLoading.loadFile("audios/marsh_sounds.mp3"); // load background music
+  // ambient = songLoading.loadFile("audios/marsh_sounds.mp3"); // load background music
+  ambient = songLoading.loadFile("audios/marsh_sounds_long.mp3"); // load background music
   
   screen = "entry-screen"; //set up intro screen to start
-  // screen = "act-two-scene-one-chunk-nine-point-one-post-transition"; //set up intro screen to start
+  // screen = "act-one-scene-four-chunk-six-end"; //set up intro screen to start
   
   changeScreen = false;
   
@@ -91,9 +92,9 @@ void draw() {
   // println("STARTING...", screen, nextScreen);
   
   // loop background music
-  if (!ambient.isPlaying()) { //if the song isn't playing
-    ambient.rewind(); //rewind song to make sure it starts at the beginning
-    ambient.play(); //play ambient background music
+  if (!ambient.isPlaying()) {
+    ambient.rewind();
+    ambient.play();
   }
   
   switch(screen) {
@@ -351,7 +352,8 @@ void draw() {
     image(screenImage, width/2, height/2);
     if (keyPressed) {
       if (keyCode == RIGHT) {
-         nextScreen = "act-one-scene-three-chunk-four-page-one";
+         // nextScreen = "act-one-scene-three-chunk-four-page-one";
+         nextScreen = "act-one-scene-three-chunk-four-page-two";
          nextScreenIsSet = true;
       } else if (keyCode == LEFT) {
          nextScreen = "act-one-scene-two-chunk-three-end";
@@ -360,6 +362,7 @@ void draw() {
     }
     break;
     
+  /*
   case "act-one-scene-three-chunk-four-page-one":
     background(#FFFFFF);
     screenImage = getImage("A1 S3 - Chunk 4 p1", 4);
@@ -374,6 +377,7 @@ void draw() {
       }
     }
     break;
+  */
    
   case "act-one-scene-three-chunk-four-page-two":
     background(#FFFFFF);
@@ -386,7 +390,8 @@ void draw() {
          nextScreen = "act-one-scene-three-chunk-four-page-three";
          nextScreenIsSet = true;
       } else if (keyCode == LEFT) {
-         nextScreen = "act-one-scene-three-chunk-four-page-one";
+         //nextScreen = "act-one-scene-three-chunk-four-page-one";
+         nextScreen = "act-one-scene-three-chunk-four-page-zero";
          nextScreenIsSet = true;
       }
     }
@@ -541,15 +546,15 @@ void draw() {
     image(screenImage, width/2, height/2);
     if (keyPressed) {
       if (key == 'G' || key == 'g') {
-         nextScreen = "act-one-scene-four-chunk-seven-page-one";
-         nextScreenIsSet = true;
-      } else if (key == 'S' || key == 's') {
          int r = int(random(200));
          if (r % 2 == 0) {
             nextScreen = "act-one-scene-four-chunk-six-point-one-page-one";
          } else {
             nextScreen = "act-one-scene-four-chunk-six-point-two-page-one";
-         }         
+         }
+         nextScreenIsSet = true;
+      } else if (key == 'S' || key == 's') {
+         nextScreen = "act-one-scene-four-chunk-seven-page-one";
          nextScreenIsSet = true;
       } else if (keyCode == LEFT) {  // Back to FIRST SITE OF CHOICE
          nextScreen = "act-one-scene-four-chunk-five-end";
