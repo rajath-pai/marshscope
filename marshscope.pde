@@ -6,7 +6,7 @@ PImage background, screenImage;
 
 Gif screenGif;
 
-Gif[] screenGifSet = new Gif[20];
+Gif[] screenGifSet = new Gif[21];
 
 String screen, nextScreen, prevScreen;
 
@@ -86,6 +86,8 @@ void setup() {
   // Chunk 10.1
   screenGifSet[19] = new Gif(this, getImagePath("A3 S1 - Chunk 10.1 p1", "gif", 10));
   
+  // Entry screen
+  screenGifSet[20] = new Gif(this, getImagePath("Entry screen", "gif", -1));
 }
 
 void draw() {
@@ -100,8 +102,16 @@ void draw() {
   switch(screen) {
   case "entry-screen":
     background(#FFFFFF);
+    screenGif = screenGifSet[20]; // Entry screen
+    screenGif.play();
+    image(screenGif, width/2, height/2);
+    screenGif.noLoop(); // if GIF needs to be disabled for looping
+    
+    /* 
+    // IMAGE VERSION
     screenImage = getImage("Entry screen", -1);
     image(screenImage, width/2, height/2);
+    */
     if (keyPressed) {
       println("Key pressed");
       if (key == 'G' || key == 'g') {
